@@ -118,7 +118,7 @@ resource "aws_security_group" "demo_sg" {
 
 # EC2 Instance
 resource "aws_instance" "demo_instance" {
-  ami                    = "ami-0554aa6767e249943" // Replace with a valid AMI ID for your region
+  ami                    = "ami-0779caf41f9ba54f0" // Replace with a valid AMI ID for your region
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.demo_subnet.id
   key_name               = aws_key_pair.demo_keypair.key_name
